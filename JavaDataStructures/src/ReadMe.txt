@@ -1,1 +1,1 @@
-Link forn Big-O chart sheet: http://bigocheatsheet.com/
+Link for Big-O chart sheet: http://bigocheatsheet.com/
