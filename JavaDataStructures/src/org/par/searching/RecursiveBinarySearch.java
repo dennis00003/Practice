@@ -1,6 +1,7 @@
 package org.par.searching;
 
 /**
+ * The array needs to be sorted.
  * Average and worst search runtime f(n)=O(log n)
  * 
  * @author Harinder Singh Bedi
