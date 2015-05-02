@@ -1,5 +1,13 @@
 package org.par.sorting;
-public class MyMergeSort {
+
+
+/**
+ * Gurranteed Average and worst runtime f(n)=O(n log n)
+ * 
+ * @author Harinder Singh Bedi
+ *
+ */
+public class MergeSort {
      
     private int[] array;
     private int[] tempMergArr;
@@ -8,7 +16,7 @@ public class MyMergeSort {
     public static void main(String a[]){
          
         int[] inputArr = {45,23,11,89,77,98,4,28,65,43};
-        MyMergeSort mms = new MyMergeSort();
+        MergeSort mms = new MergeSort();
         mms.sort(inputArr);
         for(int i:inputArr){
             System.out.print(i);

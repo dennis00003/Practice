@@ -6,7 +6,7 @@ package org.par.searching;
  * @author Harinder Singh Bedi
  *
  */
-public class MyRecursiveBinarySearch {
+public class RecursiveBinarySearch {
  
     public static int recursiveBinarySearch(int[] sortedArray, int start, int end, int key) {
          
