@@ -3,7 +3,7 @@ package org.par.tree;
 
 
 /**
- * Average search runtime f(n)=O(log n)
+ * Average search runtime f(n)=O(log n). Same for insert/delete
  * 
  * @author Harinder Singh Bedi
  *
