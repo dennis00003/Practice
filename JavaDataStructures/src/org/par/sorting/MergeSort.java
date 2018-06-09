@@ -43,12 +43,19 @@ public class MergeSort {
     }
  
     private void mergeParts(int lowerIndex, int middle, int higherIndex) {
- 
+    	// lets reset array for better readability, although we don't need to
+    	this.tempMergArr = new int[length];
+    	
+    	System.out.print("lowerIndex "+lowerIndex);
+    	//System.out.print(" middle "+middle);
+    	System.out.print(" higherIndex "+higherIndex);
+    	System.out.println();
+    	// copy all in temp
         for (int i = lowerIndex; i <= higherIndex; i++) {
             tempMergArr[i] = array[i];
         }
-        int i = lowerIndex;
-        int j = middle + 1;
+        int i = lowerIndex; // LHS
+        int j = middle + 1; // RHS
         int k = lowerIndex;
         while (i <= middle && j <= higherIndex) {
             if (tempMergArr[i] <= tempMergArr[j]) {
@@ -60,6 +67,8 @@ public class MergeSort {
             }
             k++;
         }
+        // When we replace the i'th position with new element,
+        // the existing element along with the preceding once need to copied ahead of it.
         while (i <= middle) {
             array[k] = tempMergArr[i];
             k++;

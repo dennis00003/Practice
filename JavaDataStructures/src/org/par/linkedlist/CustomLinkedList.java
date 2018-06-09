@@ -1,11 +1,11 @@
 package org.par.linkedlist;
 
-public class CoustomLinkedList {
+public class CustomLinkedList {
 
 	Node head;
 	int count;
 
-	public CoustomLinkedList() {
+	public CustomLinkedList() {
 		head=new Node(null);
 		count=0;
 	}
@@ -33,11 +33,11 @@ public class CoustomLinkedList {
 
 	public String get(int index){
 
-		if(index<=0)
+		if(index<0)
 			return null;
 
 		Node node=head.getNext();
-		for(int i=1;i<index;i++)
+		for(int i=0;i<index;i++)
 		{
 			if (node.getNext() == null)
 				return null;
@@ -50,15 +50,15 @@ public class CoustomLinkedList {
 
 	public static void main(String[] args) {
 
-		CoustomLinkedList coustomLinkedList=new CoustomLinkedList();
-		coustomLinkedList.add("1");
-		coustomLinkedList.add("2");
-		coustomLinkedList.add("3");
-		coustomLinkedList.add("4");
+		CustomLinkedList customLinkedList=new CustomLinkedList();
+		customLinkedList.add("1");
+		customLinkedList.add("2");
+		customLinkedList.add("3");
+		customLinkedList.add("4");
 
-		System.out.println(coustomLinkedList.getSize());
+		System.out.println(customLinkedList.getSize());
 		
-		System.out.println(coustomLinkedList.get(2));
+		System.out.println(customLinkedList.get(3));
 	}
 
 

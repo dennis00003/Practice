@@ -16,10 +16,23 @@ public class Palindrome {
 	public static void main(String[] args) {
 		String word="nitin";
 
-		System.out.println(istPalindrom(word.toCharArray()));
+		System.out.println(istPalindrom2(word.toCharArray()));
 		System.out.println(isPalindrome(word));
 	}
 
+	public static boolean istPalindrom2(char[] word){
+		
+		int j = word.length -1;
+		for(int i =0; i<word.length/2 ; i++){
+			
+			if(word[i]!= word[j -i])
+				return false;
+			
+		}
+		return true;
+		
+	}
+	
 	public static boolean istPalindrom(char[] word){
 		int i1 = 0;
 		int i2 = word.length - 1;

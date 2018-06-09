@@ -14,14 +14,15 @@ public class BinarySearch {
 	public static void main(String[] args) {
 		int start,end,size,mid,loc,find;
 
-		find=88;
+		find=12;
 
 		size=myArray.length;		
 
 		start=0;
 		end=size-1;
-		mid=(start+end)/2;		
-
+		//mid=(start+end)/2;		
+		mid=start + (end - start)/2;		
+		
 		loc=0;
 
 		while(start<=end)
@@ -35,7 +36,9 @@ public class BinarySearch {
 			else
 				end=mid-1;
 
-			mid=(start+end)/2;
+			//mid=(start+end)/2;
+			mid=start + (end - start)/2;	
+			System.out.println(mid);
 
 		}
 
