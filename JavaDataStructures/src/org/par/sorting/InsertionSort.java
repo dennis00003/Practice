@@ -22,7 +22,6 @@ public class InsertionSort {
     }
      
     private static void printNumbers(int[] input) {
-         
         for (int i = 0; i < input.length; i++) {
             System.out.print(input[i] + ", ");
         }

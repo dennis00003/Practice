@@ -2,7 +2,7 @@ package org.par.sorting;
 
 
 /**
- * Gurranteed Average and worst runtime f(n)=O(n log n)
+ * Guaranteed Average and worst runtime f(n)=O(n log n)
  * 
  * @author Harinder Singh Bedi
  *
@@ -14,7 +14,6 @@ public class MergeSort {
     private int length;
  
     public static void main(String a[]){
-         
         int[] inputArr = {45,23,11,89,77,98,4,28,65,43};
         MergeSort mms = new MergeSort();
         mms.sort(inputArr);
@@ -32,7 +31,6 @@ public class MergeSort {
     }
  
     private void doMergeSort(int lowerIndex, int higherIndex) {
-         
         if (lowerIndex < higherIndex) {
             int middle = lowerIndex + (higherIndex - lowerIndex) / 2;
             // Below step sorts the left side of the array

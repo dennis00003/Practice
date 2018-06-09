@@ -22,12 +22,10 @@ public class FibonacciCalculator {
         System.out.println("Fibonacci series upto " + number +" numbers : ");
         //printing Fibonacci series upto number
         for(int i=1; i<=number; i++){
-            System.out.print(fibonacci2(i) +" ");
+            System.out.print(fibonacci(i) +" ");
         }
-  
-    
+        fibonacci3(number);
     } 
-  
 
     /*
      * Java program for Fibonacci number using recursion.
@@ -38,11 +36,8 @@ public class FibonacciCalculator {
         if(number == 1 || number == 2){
             return 1;
         }
-      
         return fibonacci(number-1) + fibonacci(number -2); //tail recursion
     }
-  
-
 
     /*
      * Java program to calculate Fibonacci number using loop or Iteration.
@@ -65,5 +60,26 @@ public class FibonacciCalculator {
         return fibonacci; //Fibonacci number
       
     }   
+    
+    public static void fibonacci3(int number)
+    {
+    	if(number>0)
+    		System.out.println(1);
+    	
+    	if(number>1)
+    		System.out.println(1);
+    	else
+    		return;
+    	
+    	int first=1;
+    	int second=1;
+    	
+    	for(int i=3;i<=number;i++){
+    		int fibo=first+second;
+    		System.out.println(fibo);
+    		first=second;
+    		second=fibo;
+    	}
+    }
   
 }
