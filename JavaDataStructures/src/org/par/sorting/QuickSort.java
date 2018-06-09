@@ -25,6 +25,11 @@ public class QuickSort {
         }
         this.array = inputArr;
         length = inputArr.length;
+        for(int i:array){
+            System.out.print(i);
+            System.out.print(" ");
+        }
+        System.out.println();
         quickSort(0, length - 1);
     }
  
@@ -32,7 +37,7 @@ public class QuickSort {
          
         int i = lowerIndex;
         int j = higherIndex;
-        // calculate pivot number, I am taking pivot as middle index number
+        // calculate pivot number, I am taking middle as pivot
         int pivot = array[lowerIndex+(higherIndex-lowerIndex)/2];
         // Divide into two arrays
         while (i <= j) {
@@ -50,6 +55,12 @@ public class QuickSort {
             }
             if (i <= j) {
                 exchangeNumbers(i, j);
+                System.out.println(pivot);
+                for(int a:array){
+                    System.out.print(a);
+                    System.out.print(" ");
+                }
+                System.out.println();
                 //move index to next position on both sides
                 i++;
                 j--;
@@ -71,7 +82,8 @@ public class QuickSort {
     public static void main(String a[]){
          
         QuickSort sorter = new QuickSort();
-        int[] input = {24,2,45,20,56,75,2,56,99,53,12};
+        //int[] input = {24,2,45,20,56,75,2,56,99,53,12};
+        int[] input = { 1,5,3,8,2 };
         sorter.sort(input);
         for(int i:input){
             System.out.print(i);

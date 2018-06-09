@@ -22,7 +22,7 @@ public class FibonacciCalculator {
         System.out.println("Fibonacci series upto " + number +" numbers : ");
         //printing Fibonacci series upto number
         for(int i=1; i<=number; i++){
-            System.out.print(fibonacci2(i) +" ");
+            System.out.print(fibonacci(i) +" ");
         }
   
     

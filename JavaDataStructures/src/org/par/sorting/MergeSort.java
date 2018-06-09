@@ -69,9 +69,8 @@ public class MergeSort {
             }
             k++;
         }
-        // When we calculate the middle, in case of
-        // odd number the LHS will be greater so just flush all the left over
-        // values in the final array
+        // When we replace the i'th position with new element,
+        // the existing element along with the preceding once need to copied ahead of it.
         while (i <= middle) {
             array[k] = tempMergArr[i];
             k++;

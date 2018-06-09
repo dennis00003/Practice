@@ -7,7 +7,7 @@ public class FibWithArray {
 		int size=9;
 		
 		int [] fibArr=new int[size];
-		fibArr[0]=0;
+		fibArr[0]=1;
 		fibArr[1]=1;	
 		
 		
