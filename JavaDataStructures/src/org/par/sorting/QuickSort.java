@@ -85,10 +85,10 @@ public class QuickSort {
         
         //int[] input = {24,2,45,20,56,75,2,56,99,53,12};
         int[] input = { 1,5,3,8,2 };
-        sorter.sort(input);
+        sorter.sort(input); 
         for(int i:input){
             System.out.print(i);
-            System.out.print(" ");
+            System.out.print("   ");
         }
     }
 }
